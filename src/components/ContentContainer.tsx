@@ -7,7 +7,7 @@ interface ContentContainerProps {
 const ContentContainer: React.FC<ContentContainerProps> = ({ children }) => {
 
   return (
-    <main className="w-full antialiased mt-[60px]">
+    <main className="w-full antialiased text-right">
       <Header/>
 
        <div className="w-full p-5 overflow-x-hidden ">
