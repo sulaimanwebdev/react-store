@@ -10,7 +10,7 @@ const Home = () => {
         
         <div className="mt-20 px-5">
           <div className="text-[25px] font-bold text-center mb-2">מחלקות</div>
-          <div className="grid grid-cols-4 gap-1 max-w-[1200px] mx-auto">
+          <div className="grid grid-cols-1 2sm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 max-w-[1200px] mx-auto">
             <Link to="/"><img src="/images/category1.jpg" alt="category" className="w-full h-full" /></Link>
             <Link to="/"><img src="/images/category2.jpg" alt="category" className="w-full h-full" /></Link>
             <Link to="/"><img src="/images/category3.jpg" alt="category" className="w-full h-full" /></Link>
@@ -25,7 +25,7 @@ const Home = () => {
 
         <div className="mt-20 px-5">
           <div className="text-[25px] font-bold text-center mb-2">מבצעים חמים</div>
-          <div className="grid grid-cols-5 gap-1 max-w-[1200px] mx-auto">
+          <div className="grid grid-cols-1 2sm:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 max-w-[1200px] mx-auto">
 
             <div className="relative px-4 py-4 border-solid border bg-white">
              <img src="/images/sale.png" alt="sale" className="absolute top-2 left-2" />

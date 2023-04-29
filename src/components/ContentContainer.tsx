@@ -9,7 +9,7 @@ const ContentContainer: React.FC<ContentContainerProps> = ({ children }) => {
 
   return (
     <main className="w-full antialiased text-right">
-      <Header/>
+      {/* <Header/> */}
 
        <div className="w-full overflow-x-hidden">
         {children}
