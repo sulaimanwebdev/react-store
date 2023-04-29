@@ -85,7 +85,7 @@ const Header = (props: any) => {
 
           </div>
         </div>
-        <div className="flex items-center justify-center h-full bg-black"><img src="/images/logo.png" alt="logo" className="w-full h-full object-cover"/></div>
+        <div className="flex items-center justify-center h-full bg-black px-5"><img src="/images/logo.png" alt="logo" className="w-full h-full object-cover"/></div>
     </div>
     
     <div className="flex items-center gap-14 py-1.5 px-2">

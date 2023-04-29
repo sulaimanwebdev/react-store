@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 
 interface ContentContainerProps {
@@ -10,9 +11,11 @@ const ContentContainer: React.FC<ContentContainerProps> = ({ children }) => {
     <main className="w-full antialiased text-right">
       <Header/>
 
-       <div className="w-full p-5 overflow-x-hidden ">
+       <div className="w-full overflow-x-hidden">
         {children}
        </div>
+
+       <Footer/>
 
      </main>
   );
