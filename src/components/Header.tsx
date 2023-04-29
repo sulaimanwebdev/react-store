@@ -3,7 +3,7 @@ import {useState} from 'react';
 const Header = (props: any) => {
   const [menu, setmenu] = useState('-translate-y-full')
   return (
-    <div className="bg-black border-solid borer-b borer-white z-[99999]">
+    <div className="fixed top-0 left-0 w-full bg-black border-solid border-b borer-white z-[99999]">
     <div className="flex items-center justify-between">
         <div className="w-full h-full">
           <div className="px-2 py-1.5 bg-[#000000] hidden lg:flex items-center justify-between">
@@ -92,7 +92,7 @@ const Header = (props: any) => {
 
           </div>
         </div>
-        <div className="flex items-center justify-center h-full bg-black px-5"><img src="/images/logo.png" alt="logo" className="w-full h-full object-cover"/></div>
+        <div className="flex items-center justify-center h-full bg-black px-5"><img src="/images/logo.png" alt="logo" className="w-[180px] lg:w-full h-full object-cover"/></div>
     </div>
     
     <div className="hidden lg:flex items-center gap-14 py-1.5 px-2">
