@@ -6,9 +6,7 @@ const Home = () => {
   return (
     <>
       <ContentContainer>
-        <div className="mt-[77px] lg:mt-[172px]">
          <Slider/>
-        </div>
         
         <div className="mt-[77px] lg:mt-[172px]">
         <div className="mt-20 px-5">

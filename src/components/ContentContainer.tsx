@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom"
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -11,11 +12,11 @@ const ContentContainer: React.FC<ContentContainerProps> = ({ children }) => {
     <main className="w-full antialiased text-right">
       <Header/>
 
-       <div className="w-full overflow-x-hidden">
+       <div className="w-full overflow-x-hidden mt-[74px] lg:mt-[172px]">
         {children}
        </div>
 
-       <Footer/>
+       {location.pathname === "/" ? <Footer/> : null}
 
      </main>
   );
