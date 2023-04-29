@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 const Header = (props: any) => {
   const [menu, setmenu] = useState('-translate-y-full')
@@ -41,50 +42,50 @@ const Header = (props: any) => {
          </div>
   
           <div className={`transition lg:translate-y-0 ${menu} flex flex-col lg:grid lg:grid-cols-[1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr] h-screen lg:h-full divide-y lg:divide-x divide-black w-full fixed top-0 left-0 lg:relative lg:top-auto lg:right-auto z-[99] max-h-screen overflow-y-auto`}>
-            <a href="#" className="px-2 py-2 h-full bg-red-500 flex items-center justify-center flex-col gap-1 text-center text-[15px] text-white">
+            <Link to="/shop" className="px-2 py-2 h-full bg-red-500 flex items-center justify-center flex-col gap-1 text-center text-[15px] text-white">
               <img src="/images/icon1.jpg" alt="icon" />
               מבצעים
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon2.jpg" alt="icon" className="w-[40px]" />
               מכשירי חשמל
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon3.jpg" alt="icon" />
               אחסון וארגון
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon4.jpg" alt="icon" />
               כלי אירוח
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon5.jpg" alt="icon" />
               סכינים וחיתוך
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon6.jpg" alt="icon" />
               כלי בישול
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon7.jpg" alt="icon" />
               כלי בישול
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon8.jpg" alt="icon" />
               כלי בישול
-            </a>
+            </Link>
 
-            <a href="#" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
+            <Link to="/shop" className="px-2 py-2 h-full bg-yellow-500 flex items-center justify-center flex-col gap-1 text-center text-[15px]">
               <img src="/images/icon9.jpg" alt="icon" />
               כלי בישול
-            </a>
+            </Link>
  
             <button onClick={()=> {setmenu('-translate-y-full')}} className="flex lg:hidden absolute top-3 right-3 border-none">
              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10"><path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -92,7 +93,7 @@ const Header = (props: any) => {
 
           </div>
         </div>
-        <div className="flex items-center justify-center h-full bg-black px-5"><img src="/images/logo.png" alt="logo" className="w-[180px] lg:w-full h-full object-cover"/></div>
+        <Link to="/" className="flex items-center justify-center h-full bg-black px-5"><img src="/images/logo.png" alt="logo" className="w-[180px] lg:w-full h-full object-cover"/></Link>
     </div>
     
     <div className="hidden lg:flex items-center gap-14 py-1.5 px-2">
